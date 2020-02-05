@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: gray;
+}
+header {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background: slategrey;
+    color: white;
+    padding: 20px;
+}
+hr {
+    margin-right: auto;
+    margin-left: auto;
+    border-color: #ff9933;
+}
+label {
+    font-size: 1.5em;
+}
+p {
+    font-size: 1.5em;
+}
+#split {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container {
+    min-height: 1000px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    background: slategrey;
+    color: white;
+    padding: 20px;
+}
+#topnav {
+    background: #7d8799;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+#topnav a {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    width: 50%;
+}
+.active {
+    background: gray;
+}
+.iList {
+    font-size: 1.5em;
+    list-style-type: none;
+    word-wrap: break-word;
+}
+.iList li {
+    text-decoration: none;
+    margin-left: 40px;
+}
+#selectorWrapper {
+    text-align: right;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+#selector {
+    background: gray;
+    border-radius: 5px;
+    color: white;
+    width: 125px;
+    height: 40px;
+    font-size: 1.5em;
+    padding: 5px;
+}
+#currentImageWrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    font-size: 1.5em;
+    padding: 20px;
+}
+#currentPicWrapper {
+}
+#currentImage {
+    width: 200px;
+    height: 200px;
+}
+#currentImageData {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+#adminWrapper {
+    width: 90%;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#adminButton {
+    background: gray;
+}
+#inputs {
+    display: none;
+    background: #7d8799;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+#instructions {
+    background: #7d8799;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 30px;
+    min-height: 900px;
+}
+#name {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+#url {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+#clicks {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+#addDel {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+#deleteWrapper {
+    width: 100%;
+    text-align: right;
+}
+#addWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#addButtonWrapper {
+    width: 100%;
+    text-align: right;
+}
+#addNameWrapper {
+    width: 100%;
+    text-align: right;
+}
+#addURLWrapper {
+    width: 100%;
+    text-align: right;
+}
+#label {
+    width: 100%;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#reset {
+    width: 100%;
+    margin-top: 20px;
+}
+#resetButton {
+    background: #ff9933;
+}
+#resetButton:hover {
+    color: gray;
+}
+.input {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+.button {
+    width: 200px;
+    height: 40px;
+    background: gray;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 5px;
+}
+.button:hover {
+    color: #ff9933;
+}
+@media screen and (max-width: 775px) {
+    #currentImageWrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #currentPicWrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #currentImage {
+        width: 150px;
+        height: 150px;
+    }
+    #currentImageData {
+        font-size: 1.2em;
+    }
+    #adminWrapper {
+    justify-content: center;
+    }
+    #name, #url, #clicks {
+        justify-content: center;
+    }
+    #selector {
+        font-size: 1.2em;
+    }
+    #currentImageData {
+        font-size: 1.2em;
+    }
+    #addButtonWrapper, #addNameWrapper, #addURLWrapper, #deleteWrapper, #label {
+        text-align: center;
+    }
+    #reset {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 485px) {
+    #name {
+        flex-wrap: wrap-reverse;
+        margin-bottom: 20px;
+    }
+    #url {
+        flex-wrap: wrap-reverse;
+        margin-bottom: 20px;
+    }
+    #clicks {
+        flex-wrap: wrap-reverse;
+        margin-bottom: 20px;
+    }
+}

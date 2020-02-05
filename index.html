@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Clicker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cat Clicker</h1>
+        <h3>Version: 4.0</h3>
+        <h3>Author: Damien Duran</h3>
+    </header>
+    <div id="split">
+        <br><hr><br>
+    </div>
+    <div id="container">
+        <div id="topnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="instruct.html">Instructions</a>
+        </div>
+        <div id="selectorWrapper">
+            <select id="selector">
+            </select>
+        </div>
+        <div id="currentImageWrapper">
+            <div id="currentPicWrapper">
+                <img id="currentImage" src=''/>
+            </div>
+            <div id="currentImageData">
+                <span id="currentName"></span>
+                <br><br><hr><br>
+                <span id="currentClick"></span>
+            </div>
+        </div>
+        <div id="adminWrapper">
+            <input class="button" id="adminButton" type="button" value="Admin">
+            <div id="inputs">
+                <div id="label">Change Current Object Data</div>
+                <div id="name">
+                    <input class="input" type="text" id="nameIn">
+                    <input class="button" type="button"  id="nameBut" value="Name">
+                </div>
+                <div id="url">
+                    <input class="input" type="text" id="urlIn">
+                    <input class="button" type="button" id="urlBut" value="Image URL">
+                </div>
+                <div id="clicks">
+                    <input class="input" type="text" id="clicksIn">
+                    <input class="button" type="button" id="clicksBut" value="Clicks">
+                </div>
+                <div id="addDel">
+                    <div id="deleteWrapper">
+                        <input class="button" type="button" id="delBut" value="Delete Current">
+                    </div>
+                    <div id="addWrapper">
+                            <div id="addButtonWrapper">
+                                <input class="button" type="button" id="addBut" value="Add New">
+                            </div>
+
+                            <div id="addNameWrapper">
+                                <input class="input" type="text" id="addName" value="Enter Name">
+                            </div>
+
+                            <div id="addURLWrapper">
+                                <input class="input" type="text" id="addURL" value="Enter Image URL">
+                            </div>
+                    </div>
+                </div>
+                <div id="reset">
+                    <input class="button" id="resetButton" type="button" value="Reset">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

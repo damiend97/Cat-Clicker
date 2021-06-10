@@ -9,13 +9,3 @@ The data.
 The user interface.
 ## Controller
 The communicator. Tells the data and view what to do based on user input.
-
-```
-var model = { ... }
-```
-```
-var view = { ... }
-```
-```
-var controller = { ... }
-```
